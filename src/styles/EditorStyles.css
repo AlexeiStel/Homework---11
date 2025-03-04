@@ -1,0 +1,30 @@
+.simplemde-container {
+    padding: 20px;
+    background-color: #000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .simplemde-editor {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .simplemde-preview {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+  }
+  
+  button {
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  .editor-toolbar {
+    background-color: #000;
+  }
