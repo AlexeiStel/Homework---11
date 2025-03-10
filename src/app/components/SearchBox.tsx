@@ -9,14 +9,14 @@ const SearchBox: React.FC = () => {
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchText = e.target.value.toLowerCase();
     setQuery(searchText);
-
-    const filtered = notes.filter(
-      (note) =>
-        note.title.toLowerCase().includes(searchText) ||
-        note.content.toLowerCase().includes(searchText)
-    );
-    console.log(filtered);
-    setFilteredNotes(filtered); 
+    if (searchText) {
+      const filtered = notes.filter(
+        (note) =>
+          note.title.toLowerCase().includes(searchText) ||
+          note.content.toLowerCase().includes(searchText)
+      );
+      setFilteredNotes(filtered);   
+    }
   };
 
   return (

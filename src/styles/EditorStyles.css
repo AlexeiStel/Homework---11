@@ -28,3 +28,8 @@
   .editor-toolbar {
     background-color: #000;
   }
+
+  .editor-toolbar button.active, .editor-toolbar button:hover {
+    background: #FF0000;
+    border-color: #95a5a6;
+  }

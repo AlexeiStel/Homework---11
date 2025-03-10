@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { NoteProvider } from '../../context/NoteContext';
-import { AuthProvider, useAuth } from '../../context/AuthContext';
-import Login from '../../features/auth/components/Login';
-import NotesPage from '../components/NotesPage';
-import '../../styles/App.css';
+import { NoteProvider } from '../context/NoteContext';
+import { AuthProvider, useAuth } from '../context/AuthContext';
+import Login from '../features/auth/components/Login';
+import NotesPage from './components/NotesPage';
+import '../styles/App.css';
 
 const PrivateRoute: React.FC<{ element: JSX.Element }> = ({ element }) => {
   const { isAuthenticated } = useAuth();

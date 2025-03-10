@@ -3,7 +3,7 @@ import { db } from '../features/database/db';
 
 interface AuthContextType {
   isAuthenticated: boolean;
-  login: () => Promise<void>;
+  login: (username: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
 }
 
@@ -20,7 +20,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     fetchAuthState();
   }, []);
 
-  const login = async () => {
+  const login = async (_username: string, _password: string) => {
     await db.auth.put({ id: 'auth', isAuthenticated: true });
     setIsAuthenticated(true);
   };

@@ -2,20 +2,20 @@
 .workspace {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    position: relative;
-    left: 50%;
+    background: linear-gradient(135deg, #1890ff, #87e8de);
+    color: #fff;
+    font-weight: 700;
   }
   
   .workspace h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 16px;
+    text-align: center;
   }
   
   .workspace .ant-btn {
@@ -45,4 +45,8 @@
     background-color: #f44336; 
     border-color: #f44336;
     color: white;
+  }
+
+  .workspace.ant-input {
+    width: 100%!important;
   }

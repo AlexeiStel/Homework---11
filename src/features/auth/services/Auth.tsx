@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Input, Form } from 'antd';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const Auth: React.FC = () => {

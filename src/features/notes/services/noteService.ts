@@ -1,7 +1,11 @@
 import Dexie from 'dexie';
 import { Note } from '../../types/note';
 
-const db = new Dexie('NotesDatabase');
+interface NotesDatabase extends Dexie {
+  notes: Dexie.Table<Note, string>; 
+}
+
+const db = new Dexie('NotesDatabase') as NotesDatabase;
 db.version(1).stores({
   notes: 'id,title,content', 
 });

@@ -8,10 +8,11 @@ import '../../styles/SideBar.css';
 const Sidebar: React.FC = () => {
   const { filteredNotes, createNote } = useNotes(); 
 
+  
   return (
     <Layout.Sider className="sidebar">
       <SearchBox />
-      <Button type="primary" onClick={createNote} block style={{ margin: '10px 0'}}>
+      <Button type="primary" onClick={createNote} style={{ margin: '10px 0'}}>
         Добавить новую заметку
       </Button>
       <ul>
