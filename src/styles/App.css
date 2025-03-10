@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -17,6 +16,27 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+.ant-layout .ant-layout-has-sider {
+  display: flex;
+  width: 100vw; 
+  height: 100vh; 
+}
+
+.sidebar {
+  width: 25%;
+  min-width: 300px; 
+  max-width: 400px; 
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.workspace {
+  flex-grow: 1; 
+  padding: 20px;
+  overflow-y: auto;
+}
+
 
 @keyframes logo-spin {
   from {

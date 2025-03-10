@@ -1,0 +1,52 @@
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background: linear-gradient(135deg, #1890ff, #87e8de);
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .workspace h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .workspace .ant-btn {
+    margin-top: 16px;
+  }
+  
+  .workspace .ant-btn-danger {
+    margin-top: 16px;
+  }
+  
+  .workspace .markdown-preview {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .simplemde {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+
+  .btn_delete {
+    margin-top: 10px; 
+    background-color: #f44336; 
+    border-color: #f44336;
+    color: white;
+  }
+
+  .workspace.ant-input {
+    width: 100%!important;
+  }
